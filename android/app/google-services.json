@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "324145816070",
+    "project_id": "mini-whatsapp-76d1a",
+    "storage_bucket": "mini-whatsapp-76d1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324145816070:android:ab3cabfe646d14e1165987",
+        "android_client_info": {
+          "package_name": "com.example.miniwhatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxijyczArlqxHYMQxPkObnV2dwwJSqE3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
