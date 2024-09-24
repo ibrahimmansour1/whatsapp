@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:mini_whatsapp/features/authentication/sign_in/presentation/sign_in_screen.dart';
+import 'package:mini_whatsapp/features/authentication/sign_in/views/sign_in_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
