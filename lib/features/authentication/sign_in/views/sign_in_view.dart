@@ -1,17 +1,17 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../../../home/views/home_screen.dart';
-import '../../sign_up/views/sign_up_screen.dart';
+import '../../../home/views/home_view.dart';
+import '../../sign_up/views/sign_up_view.dart';
 
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({super.key});
+class SignInView extends StatefulWidget {
+  const SignInView({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<SignInView> createState() => _SignInViewState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _SignInViewState extends State<SignInView> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
@@ -22,7 +22,7 @@ class _SignInScreenState extends State<SignInScreen> {
               email: _emailController.text, password: _passwordController.text);
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => const HomeView()),
       );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
@@ -131,7 +131,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SignUpScreen()),
+                              builder: (context) => const SignUpView()),
                         );
                       },
                     ),
