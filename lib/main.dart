@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'features/authentication/sign_in/views/sign_in_screen.dart';
+import 'package:mini_whatsapp/core/utils/router/app_routes.dart';
+import 'core/utils/router/app_router.dart';
+import 'features/authentication/sign_in/views/sign_in_view.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -23,7 +25,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SignInScreen(),
+      initialRoute: AppRoutes.splash,
+      onGenerateRoute: AppRouter.generateRoute,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
